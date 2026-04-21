@@ -59,8 +59,44 @@
             transform: scale(1.1);
             color: #0056b3;
         }
+
+        .navbar {
+            background-color: #333;
+            padding: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .navbar ul {
+            list-style-type: none; /* Removes bullet points */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar li {
+            margin: 0 15px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            color: #007bff; /* Highlights the link on hover */
+        }
     </style>
 </head>
+
+<nav class="navbar">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+    </ul>
+</nav>
+    
 <body>
 
     <div class="container">

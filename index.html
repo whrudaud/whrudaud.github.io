@@ -61,25 +61,28 @@
         }
 
         .navbar {
-            background-color: #333;
-            padding: 1rem;
-            margin-bottom: 20px;
+            position: absolute; /* Places it relative to the page */
+            top: 0;
+            right: 0;
+            width: 100%; /* Spans the width to allow right-alignment */
+            padding: 1rem 2rem;
+            box-sizing: border-box; /* Ensures padding doesn't push it off-screen */
         }
 
         .navbar ul {
-            list-style-type: none; /* Removes bullet points */
+            list-style-type: none;
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
+            justify-content: flex-end; /* Pushes items to the right */
         }
 
         .navbar li {
-            margin: 0 15px;
+            margin-left: 30px; /* Space between the links */
         }
 
         .navbar a {
-            color: white;
+            color: #333; /* Changed to dark so it's visible on your light background */
             text-decoration: none;
             font-weight: bold;
         }
@@ -89,16 +92,14 @@
         }
     </style>
 </head>
-
-<nav class="navbar">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-    </ul>
-</nav>
     
 <body>
-
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+    </nav>
     <div class="container">
         <!-- Replace the URL below with your own picture link later -->
         <img src="https://placeholder.com" alt="Kyeongmyeong Jo" class="profile-pic">
